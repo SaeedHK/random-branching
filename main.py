@@ -69,5 +69,7 @@ def random_branch(
 
 plt.figure(figsize=(20, 20))
 plt.axis("off")
-random_branch()
+N = 10
+for i in range(N):
+    random_branch(v_init=np.random.random(2))
 plt.savefig("./vessel.png")
